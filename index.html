@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration and Login Forms with Validation</title>
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Registration Form -->
+  <div class="form-container">
+    <h2>Registration Form</h2>
+    <form id="registrationForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      <span id="nameError" class="error"></span>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <span id="emailError" class="error"></span>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+      <span id="passwordError" class="error"></span>
+
+      <label for="confirmPassword">Confirm Password:</label>
+      <input type="password" id="confirmPassword" name="confirmPassword" required>
+      <span id="confirmPasswordError" class="error"></span>
+
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age" required>
+      <span id="ageError" class="error"></span>
+
+      <label>Gender:</label>
+      <input type="radio" name="gender" value="Male" required> Male
+      <input type="radio" name="gender" value="Female" required> Female
+      <span id="genderError" class="error"></span>
+
+      <label for="country">Country:</label>
+      <select id="country" name="country" required>
+        <option value="">Select</option>
+        <option value="USA">USA</option>
+        <option value="UK">UK</option>
+        <option value="Canada">Canada</option>
+      </select>
+      <span id="countryError" class="error"></span>
+
+      <label>
+        <input type="checkbox" id="terms" name="terms" required> I agree to the Terms and Conditions
+      </label>
+      <span id="termsError" class="error"></span>
+
+      <button type="submit">Register</button>
+    </form>
+  </div>
+
+  <!-- Login Form -->
+  <div class="form-container">
+    <h2>Login Form</h2>
+    <form id="loginForm">
+      <label for="loginEmail">Email:</label>
+      <input type="email" id="loginEmail" name="loginEmail" required>
+      <span id="loginEmailError" class="error"></span>
+
+      <label for="loginPassword">Password:</label>
+      <input type="password" id="loginPassword" name="loginPassword" required>
+      <span id="loginPasswordError" class="error"></span>
+
+      <button type="submit">Login</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
